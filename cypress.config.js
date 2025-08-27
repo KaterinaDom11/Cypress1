@@ -6,3 +6,13 @@ module.exports = {
     },
   },
 };
+
+module.exports.mobile = {
+  viewportWidth: 375,
+  viewportHeight: 812,
+};
+
+module.exports.laptop = {
+  viewportWidth: 1366,
+  viewportHeight: 768,
+};

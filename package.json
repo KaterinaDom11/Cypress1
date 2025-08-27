@@ -28,7 +28,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "cy:open:laptop": "cypress open --config-file cypress.laptop.config.js",
+    "cy:open:mobile": "cypress open --config-file cypress.mobile.config.js",
+    "cy:run:laptop": "cypress run --config-file cypress.laptop.config.js --headless",
+    "cy:run:mobile": "cypress run --config-file cypress.mobile.config.js --headless"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,6 +51,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "cypress": "^15.0.0",
     "eslint": "^7.10.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.12.0",
